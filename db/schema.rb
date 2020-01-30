@@ -10,18 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 3) do
+ActiveRecord::Schema.define(version: 1) do
 
   create_table "networks", force: :cascade do |t|
     t.string "call_letters"
     t.integer "channel"
-  end
-
-  create_table "shows", force: :cascade do |t|
-    t.string "name"
-    t.string "day"
-    t.string "season"
-    t.integer "network_id"
   end
 
 end
